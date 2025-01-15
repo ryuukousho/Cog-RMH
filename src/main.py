@@ -5,7 +5,7 @@ import torch.optim
 import math
 from utils import *
 import os.path
-from model import RMVH
+from model import CogRMH
 from optimizer import *
 import sys
 from config import parser
@@ -67,7 +67,7 @@ def train(args):
         ValueError("WARNING: CUDA is not available!!!")
     args.device = torch.device("cuda:0" if use_cuda else "cpu")
 
-    model = RMVH(args)
+    model = CogRMH(args)
     model = nn.DataParallel(model)
     total = count_params(model)
     logging.info("Total number of parameters {}".format(total))
