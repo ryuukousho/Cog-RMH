@@ -118,7 +118,7 @@ class AttH(BaseH):
         return (res, c), self.bh(queries[:, 0])
 
 
-class RMVH(AttH):
+class CogRMH(AttH):
     def __init__(self, args):
         super(RMVH, self).__init__(args)
         self.device = args.device
