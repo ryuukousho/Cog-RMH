@@ -120,7 +120,7 @@ class AttH(BaseH):
 
 class CogRMH(AttH):
     def __init__(self, args):
-        super(RMVH, self).__init__(args)
+        super(CogRMH, self).__init__(args)
         self.device = args.device
         self.n_layers = args.n_layers
         self.history_len = args.history_len
