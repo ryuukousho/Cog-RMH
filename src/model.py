@@ -145,7 +145,7 @@ class CogRMH(AttH):
         self.layers_s = nn.ModuleList()
         self.static_layers = nn.ModuleList()
         self.build_layers(args)
-        if self.model_name == 'RMVH':
+        if self.model_name == 'CogRMH':
             self.s_hp = nn.Parameter(torch.Tensor([args.s_hp]), requires_grad=False)
             self.s_delta_ind = args.s_delta_ind
             if args.s_hp < 0:
@@ -237,7 +237,7 @@ class CogRMH(AttH):
 
     def reason(self, queries, ent_emb, eval_mode=False, epoch=1000, rel_emb=None, c=None):
         new_factors, old_factors = None, None
-        if self.model_name == 'RMVH' and self.s_hp != 0:
+        if self.model_name == 'CogRMH' and self.s_hp != 0:
             new_ent_emb = F.dropout(ent_emb, self.reason_dropout, training=self.training)
             init_ent_emb = self.init_ent_emb.weight
             new_score, new_factors = self.forward(queries, new_ent_emb, eval_mode=eval_mode)
