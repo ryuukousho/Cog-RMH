@@ -1,4 +1,4 @@
-# Recalling Multiview History to Future: Cognition-Based Temporal Knowledge Graph Reasoning
+# Cog-RMH: Cognition-based Temporal Knowledge Graph Reasoning via Recalling Multiview History to Future
 
 This is the released codes of the anonymous submission to the KDD 2025 (February Cycle):
 
