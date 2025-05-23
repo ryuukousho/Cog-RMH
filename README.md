@@ -1,6 +1,6 @@
-# Cog-RMH: Cognition-based Temporal Knowledge Graph Reasoning via Recalling Multiview History to Future
+# Cog-RMH: Cognition-based Recalling Multiview History for Event Forecasting in Temporal Knowledge Graph
 
-This is the released codes of the anonymous submission to the KDD 2025 (February Cycle):
+This is the released codes of the submission to the ACM Transactions on Information Systems (TOIS):
 
 ## Environment
 
