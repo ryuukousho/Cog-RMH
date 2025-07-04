@@ -1,6 +1,6 @@
 # Cog-RMH: Cognition-based Recalling Multiview History for Event Forecasting in Temporal Knowledge Graph
 
-This is the released codes of the submission to the ACM Transactions on Information Systems (TOIS):
+This is the released codes of the submission to the IEEE Transactions on Knowledge and Data Engineering (TKDE):
 
 ## Environment
 
