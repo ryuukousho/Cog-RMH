@@ -67,9 +67,9 @@ class BaseH(KGModel):
         self.wordrel.weight.data = self.init_size * torch.randn((self.sizes[3], 2 * self.rank))
         self.multi_c = args.multi_c
         if self.multi_c:
-            c_init = torch.ones((self.sizes[1], 1))
+            c_init = torch.full((self.sizes[1], 1), args.c_init, dtype=torch.float32)
         else:
-            c_init = torch.ones((1, 1))
+            c_init = torch.full((1, 1), args.c_init, dtype=torch.float32)
         self.c = nn.Parameter(c_init, requires_grad=True)
 
     def get_rhs(self, queries, ent_emb=None, eval_mode=False):
