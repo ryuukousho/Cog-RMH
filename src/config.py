@@ -6,7 +6,7 @@ parser.add_argument("--dataset", "--d", type=str, default="DEBUG",
 parser.add_argument("--model", choices=['CogRMH'], default="CogRMH",
                     help="Knowledge Graph embedding models")
 parser.add_argument("--c-init", default=1.0, type=int,
-                    help="Negative initialized curvature")
+                    help="Initialized absolute curvature")
 parser.add_argument("--debug", action="store_true",
                     help="Only use 1000 examples for debugging")
 parser.add_argument("--double-precision", action="store_true",
