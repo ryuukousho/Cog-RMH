@@ -33,8 +33,6 @@ parser.add_argument("--init-size", default=1e-3, type=float,
                     help="Initial embeddings' scale")
 parser.add_argument("--learning-rate", default=1e-3, type=float,
                     help="Learning rate")
-parser.add_argument("--multi-c", action="store_true",
-                    help="Multiple curvatures per relation")
 parser.add_argument("--rank", default=32, type=int,
                     help="Embedding dimension")
 parser.add_argument("--history-len", type=int, default=1,
