@@ -65,11 +65,7 @@ class BaseH(KGModel):
         self.rel_diag = nn.Embedding(self.sizes[1], self.rank)
         self.rel_diag.weight.data = 2 * torch.rand((self.sizes[1], self.rank)) - 1.0
         self.wordrel.weight.data = self.init_size * torch.randn((self.sizes[3], 2 * self.rank))
-        self.multi_c = args.multi_c
-        if self.multi_c:
-            c_init = torch.full((self.sizes[1], 1), args.c_init, dtype=torch.float32)
-        else:
-            c_init = torch.full((1, 1), args.c_init, dtype=torch.float32)
+        c_init = torch.full((1, 1), args.c_init, dtype=torch.float32)
         self.c = nn.Parameter(c_init, requires_grad=True)
 
     def get_rhs(self, queries, ent_emb=None, eval_mode=False):
@@ -83,10 +79,7 @@ class BaseH(KGModel):
         return - hyp_distance_multi_c(lhs_e, rhs_e, c, eval_mode) ** 2
 
     def get_c(self):
-        if self.multi_c:
-            return self.c
-        else:
-            return self.c.repeat(self.sizes[1], 1)
+        return self.c.repeat(self.sizes[1], 1)
 
 
 class AttH(BaseH):
