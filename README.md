@@ -57,3 +57,7 @@ CUDA_VISIBLE_DEVICES=1 python main.py --model CogRMH --dataset ICEWS18 --bias le
 ```shell
 CUDA_VISIBLE_DEVICES=1 python main.py --model CogRMH --dataset GDELT --bias learn --s-delta-ind --n-head 2 --rank 20 --history-len 9 --test
 ```
+
+## Acknowledgements
+
+The source codes take [ReTIN](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/cit2.12186) as the backbone to implement our proposed method. Please cite both our work and [ReTIN](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/cit2.12186) if you find this repository is helpful for your research.
