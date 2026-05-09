@@ -1,6 +1,10 @@
 # Cog-RMH: Cognition-based Recalling Multiview History for Event Forecasting in Temporal Knowledge Graph
 
-This is the released codes of the submission to the IEEE Transactions on Knowledge and Data Engineering (TKDE). Please note that no commercial use is permitted until the paper is accepted.
+This repository contains the official PyTorch implementation for the Cog-RMH model in IEEE Transactions on Knowledge and Data Engineering.
+
+Paper Link: https://ieeexplore.ieee.org/document/11503463
+
+DOI: 10.1109/TKDE.2026.3689542
 
 ## Environment
 
