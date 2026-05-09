@@ -4,7 +4,7 @@ This repository contains the official PyTorch implementation for the Cog-RMH mod
 
 Paper Link: https://ieeexplore.ieee.org/document/11503463
 
-DOI: 10.1109/TKDE.2026.3689542
+DOI: [10.1109/TKDE.2026.3689542](https://doi.org/10.1109/TKDE.2026.3689542)
 
 ## Environment
 
