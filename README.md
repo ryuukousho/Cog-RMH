@@ -62,6 +62,12 @@ CUDA_VISIBLE_DEVICES=1 python main.py --model CogRMH --dataset ICEWS18 --bias le
 CUDA_VISIBLE_DEVICES=1 python main.py --model CogRMH --dataset GDELT --bias learn --s-delta-ind --n-head 2 --rank 20 --history-len 9 --test
 ```
 
+## Implementation & Evaluation Protocol
+
+The backbone architecture and evaluation pipeline of this repository are inherited from the upstream SOTA framework [ReTIN](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/cit2.12186). To ensure strict experimental consistency and a fair comparison of the relative gains brought by our proposed Cog-RMH, we follow the exact target-guided scoring setting established in the original upstream codebase.
+
+Researchers extending this line of work are advised to note the boundary between this inherited target-guided protocol and purely open-world TKG scoring setups. We appreciate the attention and feedback from our community colleagues.
+
 ## Acknowledgements
 
 The source codes take [ReTIN](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/cit2.12186) as the backbone to implement our proposed method. Please cite both our work and [ReTIN](https://ietresearch.onlinelibrary.wiley.com/doi/full/10.1049/cit2.12186) if you find this repository is helpful for your research.
